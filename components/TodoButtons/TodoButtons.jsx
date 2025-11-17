@@ -10,7 +10,7 @@ const TodoButtons = ({setFilter,clearTasks}) => {
       <button onClick={() => setFilter("active")} className={styles.taskButton}>ACTIVE</button>
       <button onClick={() => setFilter("done")} className={styles.taskButton}>DONE</button>
     </div>
-      <button onClick={clearTasks} className={styles.taskButton}>CLEAR TASKS</button>
+      <button onClick={clearTasks} className={styles.taskButton}>CLEAR Completed</button>
     </>
   )
 }

@@ -14,7 +14,28 @@
     
 }
 
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid hsl(235, 19%, 35%);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
 
-.checkbox {
-  
+.circleDone {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(135deg, #57ddff 0%, #c058f3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleDone::after {
+  content: url(/icons/icon-check.svg);
+  color: white;
+  font-size: 13px;
 }

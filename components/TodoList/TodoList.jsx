@@ -7,11 +7,12 @@ const TodoList = ({filteredTasks,toggleTask,deleteTask}) => {
         
         filteredTasks.map((t) => (
         <li key={t.id} className={styles.taskRow}>
-          <input 
-          className={styles.checkbox}
-          type="checkbox"
-          checked={t.completed}
-          onClick={() => toggleTask(t.id)}></input>
+     <div
+  className={t.completed ? styles.circleDone : styles.circle}
+  onClick={() => toggleTask(t.id)}
+></div>
+
+
           <p style={{textDecoration: t.completed ? "line-through" : "none"}}>{t.text}</p>
           <button onClick={() => deleteTask(t.id)}>X</button>
 
