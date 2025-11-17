@@ -1,10 +1,14 @@
 import { useState } from "react";
-
+import TodoItem from "../components/TodoItem/TodoItem";
+import TodoList from "../components/TodoList/TodoList";
+import TodoButtons from "../components/TodoButtons/TodoButtons";
+import { useLocalStorage } from "usehooks-ts";
 import "./App.css";
+
 
 function App() {
   const [task,setTask] = useState ("")
-  const [tasks,setTasks] = useState ([])
+  const [tasks,setTasks] = useLocalStorage ("tasks", [])
   const [filter,setFilter] = useState ("all")
   const [theme,setTheme] = useState ("light")
 
@@ -40,31 +44,30 @@ function App() {
   
 
   return (
-    <div>
-      <input 
-      type="text"
-      placeholder="Add a new task ..."
-      value={task}
-      onChange={(e) => setTask(e.target.value)}
-      ></input>
-      <button onClick={addTask}>ADD</button>
+    <div className="taskWrapper">
+    <div className="hero">
+      <div className="title">
+      <h1>TODO</h1>
+      <h1>X</h1>
+      </div>
+      </div> 
+    <div className="taskRow">
+      <TodoItem 
+      task={task}
+      setTask={setTask}
+      addTask={addTask}/>
+    </div>
+      <TodoList 
+      filteredTasks={filteredTasks}
+      deleteTask={deleteTask}
+      toggleTask={toggleTask}/> 
 
-      {filteredTasks.map((t) => (
-        <li key={t.id}>
-          <input type="checkbox"
-          checked={t.completed}
-          onClick={() => toggleTask(t.id)}></input>
-          <p style={{textDecoration: t.completed ? "line-through" : "none"}}>{t.text}</p>
-          <button onClick={() => deleteTask(t.id)}>X</button>
-
-        </li>
-      ))}
-
-      <button onClick={() => setFilter("all")}>ALL</button>
-      <button onClick={() => setFilter("active")}>ACTIVE</button>
-      <button onClick={() => setFilter("done")}>DONE</button>
-
-      <button onClick={clearTasks}>CLEAR TASKS</button>
+    <div className="buttonsContainer">
+      <TodoButtons 
+      setFilter={setFilter}
+      clearTasks={clearTasks}/>
+      </div>
+      
     </div>
   );
 }

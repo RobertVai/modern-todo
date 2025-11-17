@@ -1,4 +1,64 @@
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: hsl(235, 21%, 11%);
+  height: 100vh;
+  max-width: 1440px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  padding-bottom: 5rem;
+}
+
+
+.taskWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;              
+  color: hsl(234, 39%, 85%);
+
+  
+          
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+}
+
+.taskRow {
+  display: flex;
+}
+
+.taskWrapper h1 {
+  color: white;
+  letter-spacing: 10px;
+}
+
+.buttonsContainer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 509px;
+position: relative;
+bottom: 6.5rem;
+background-color: hsl(235, 24%, 19%);
+padding: 1.1rem;
+border: none;
+border-radius: 5px;
 }
