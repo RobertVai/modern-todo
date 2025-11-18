@@ -12,20 +12,3 @@
     color: hsl(220, 98%, 61%);
     cursor: pointer;
 }
-
-.mobileButtons {
-    display: none;
-}
-
-@media screen and (max-width: 375px)  {
-
-.filterButtons {
-    visibility: hidden;
-}
-
-.taskButton {
-    display: flex;
-    
-}
-
-}

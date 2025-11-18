@@ -2,14 +2,27 @@
     display: flex;
     padding-bottom: 1rem;
     position: relative;
-    bottom: 7rem;
+    bottom: 9rem;
 }
 
 .newTask input {
     padding: 1.3rem;
     width: 500px;
     background-color: hsl(235, 24%, 19%);
-    color: hsl(234, 39%, 85%);
+    color: hsl(0, 0%, 100%);
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
+}
+
+
+@media screen and (max-width: 375px)  {
+  .newTask input {
+ width: 280px;
+
+    
+}
+.newTask {
+    position: relative;
+    bottom: 6rem;
+}
 }

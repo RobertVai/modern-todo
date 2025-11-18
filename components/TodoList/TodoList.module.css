@@ -6,12 +6,19 @@
     background-color: hsl(235, 24%, 19%);
     color: hsl(234, 39%, 85%);
     letter-spacing: 1px;
-    gap: 1rem;
+    gap:1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
+    border-radius: 1px;
     position: relative;
-    bottom: 6.5rem;
+    bottom: 8.5rem;
     
+}
+
+
+.completedText {
+  text-decoration: line-through;
+  color: hsl(235, 14%, 35%);
+
 }
 
 .circle {
@@ -21,6 +28,7 @@
   border: 1px solid hsl(235, 19%, 35%);
   cursor: pointer;
   transition: 0.2s ease;
+  margin-left: 1rem;
 }
 
 .circleDone {
@@ -32,10 +40,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .circleDone::after {
   content: url(/icons/icon-check.svg);
   color: white;
   font-size: 13px;
+}
+
+@media screen and (max-width: 375px)  {
+  .taskRow {
+ width: 320px;
+
+    
+}
+
+.taskRow {
+  bottom: 6rem;
+}
 }

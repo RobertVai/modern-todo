@@ -5,9 +5,18 @@ body {
   font-style: normal;
   margin: 0 auto;
   padding: 0 auto;
-  background-color: hsl(235, 21%, 11%);
   height: 100vh;
-  max-width: 1440px;
+  
+}
+
+.dark {
+  height: 100vh;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.light {
+  height: 100vh;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .title {
@@ -29,21 +38,29 @@ body {
           
 }
 
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/bg-desktop-dark.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 20vh;
+  height: 25vh;
   width: 100%;
 }
 
-.taskRow {
-  display: flex;
+
+.light .hero {
+  background-image: url("/images/bg-desktop-light.jpg");
+  background-position: center top;
 }
+
+.dark .hero {
+  background-image: url("/images/bg-desktop-dark.jpg");
+  
+}
+
 
 .taskWrapper h1 {
   color: white;
@@ -56,9 +73,56 @@ align-items: center;
 justify-content: space-between;
 width: 509px;
 position: relative;
-bottom: 6.5rem;
+bottom: 8.5rem;
+background-color: hsl(235, 24%, 19%);
+padding: 1.1rem;
+border: none;
+border-radius: 1px;
+}
+
+.mobileButtons {
+  display: none;
+}
+
+@media screen and (max-width: 375px)  {
+  .title {
+ width: 332px;
+
+    
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 287px;
+  height: 18px;
+  margin-top: 2.5rem;
+}
+
+.mobileButtons {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 290px;
+position: relative;
+bottom: 7.5rem;
 background-color: hsl(235, 24%, 19%);
 padding: 1.1rem;
 border: none;
 border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 14vh;
+  width: 100%;
+}
+
+
 }
