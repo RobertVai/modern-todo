@@ -14,6 +14,20 @@
     
 }
 
+.taskRowLight {
+     display: flex;
+    align-items: center;
+    padding: 0.1rem;
+    width: 540px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(235, 19%, 35%);
+    letter-spacing: 1px;
+    gap:1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 1px;
+    position: relative;
+    bottom: 8.5rem;
+}
 
 .completedText {
   text-decoration: line-through;
@@ -49,14 +63,49 @@
   font-size: 13px;
 }
 
-@media screen and (max-width: 375px)  {
+.deleteButton {
+  display: none;
+}
+@media screen and (max-width: 550px)  {
   .taskRow {
  width: 320px;
+ bottom: 6rem;
 
     
 }
 
-.taskRow {
-  bottom: 6rem;
+  .taskRowLight {
+ width: 320px;
+ bottom: 6rem;
+
+    
+}
+
+
+.deleteButton {
+  display: flex;
+  background: none;
+  border: none;
+  
+}
+}
+
+@media screen and (max-height: 990px) {
+  .taskRow {
+  bottom: 4.8rem;
+}
+
+  .taskRowLight {
+  bottom: 4.8rem;
+}
+}
+
+@media screen and (max-height: 670px) {
+  .taskRow {
+  bottom: 3rem;
+}
+
+  .taskRowLight {
+  bottom: 3rem;
 }
 }

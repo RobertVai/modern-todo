@@ -14,15 +14,63 @@
     border-radius: 1px;
 }
 
+.newTaskLight {
+        display: flex;
+    padding-bottom: 1rem;
+    position: relative;
+    bottom: 9rem;
+}
+.newTaskLight input {
+    padding: 1.3rem;
+    width: 500px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 1px;
+}
 
-@media screen and (max-width: 375px)  {
+@media screen and (max-width: 550px)  {
   .newTask input {
- width: 280px;
+ width: 281px;
+
+    
+}
+
+  .newTaskLight input {
+ width: 281px;
 
     
 }
 .newTask {
     position: relative;
     bottom: 6rem;
+}
+
+.newTaskLight {
+    position: relative;
+    bottom: 6rem;
+}
+}
+
+@media screen and (max-height: 990px) {
+  .newTask {
+  bottom: 4.5rem;
+}
+
+.newTaskLight {
+    bottom: 4.5rem;
+}
+}
+
+@media screen and (max-height: 670px) {
+
+.newTask {
+    position: relative;
+    bottom: 3rem;
+}
+
+.newTaskLight {
+    position: relative;
+    bottom: 3rem;
 }
 }

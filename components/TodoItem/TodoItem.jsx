@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../TodoItem/TodoItem.module.css";
 
-const TodoItem = ({ task, setTask, addTask }) => {
+const TodoItem = ({ task, setTask, addTask,theme }) => {
   return (
-    <div className={styles.newTask}>
+    <div className={theme === "dark" ? styles.newTask : styles.newTaskLight}>
       <input
         type="text"
         placeholder="Create a new todo..."

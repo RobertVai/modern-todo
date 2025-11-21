@@ -17,7 +17,7 @@
     display: none;
 }
 
-@media screen and (max-width: 375px)  {
+@media screen and (max-width: 550px)  {
 
 .filterButtons {
     visibility: hidden;
@@ -29,3 +29,4 @@
 }
 
 }
+

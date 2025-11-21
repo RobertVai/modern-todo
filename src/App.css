@@ -16,7 +16,9 @@ body {
 
 .light {
   height: 100vh;
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(233, 11%, 84%);
+  
+
 }
 
 .title {
@@ -80,11 +82,24 @@ border: none;
 border-radius: 1px;
 }
 
+.buttonsContainerLight {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 509px;
+position: relative;
+bottom: 8.5rem;
+background-color: hsl(0, 0%, 98%);
+padding: 1.1rem;
+border: none;
+border-radius: 1px;
+}
+
 .mobileButtons {
   display: none;
 }
 
-@media screen and (max-width: 375px)  {
+@media screen and (max-width: 550px)  {
   .title {
  width: 332px;
 
@@ -95,7 +110,16 @@ border-radius: 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 287px;
+  width: 288px;
+  height: 18px;
+  margin-top: 2.5rem;
+}
+
+.buttonsContainerLight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 288px;
   height: 18px;
   margin-top: 2.5rem;
 }
@@ -108,6 +132,19 @@ width: 290px;
 position: relative;
 bottom: 7.5rem;
 background-color: hsl(235, 24%, 19%);
+padding: 1.1rem;
+border: none;
+border-radius: 5px;
+}
+
+.mobileButtonsLight {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 290px;
+position: relative;
+bottom: 7.5rem;
+background-color: hsl(0, 0%, 98%);
 padding: 1.1rem;
 border: none;
 border-radius: 5px;
@@ -126,3 +163,39 @@ border-radius: 5px;
 
 
 }
+
+@media screen and (max-height: 999px) {
+ 
+  .title {
+    position: relative;
+    top: 0.5rem;
+  }
+
+  .buttonsContainer {
+    margin-top: 3.7rem;
+  }
+
+  .buttonsContainerLight {
+    margin-top: 3.7rem;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .taskWrapper h1 {
+    font-size: 18px;
+  }
+
+  .title {
+    position: relative;
+    top: 1rem;
+  }
+
+    .buttonsContainer {
+    margin-top: 5.5rem;
+  }
+
+  .buttonsContainerLight {
+    margin-top: 5.5rem;
+  }
+}
+

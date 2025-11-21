@@ -29,6 +29,10 @@ function App() {
     setTasks (tasks.map((t) => t.id === id ? {...t, completed: !t.completed} : t))
   }
 
+  const deleteTask = (id) => {
+    setTasks (tasks.filter((t) => t.id !== id))
+  }
+
   const filteredTasks = tasks.filter((t) =>{
     if (filter === "active") return !t.completed;
     if (filter === "done") return t.completed;
@@ -58,21 +62,24 @@ function App() {
       <TodoItem 
       task={task}
       setTask={setTask}
-      addTask={addTask}/>
+      addTask={addTask}
+      theme={theme}/>
     </div>
     <div className="todoList">
       <TodoList 
       filteredTasks={filteredTasks}
-      toggleTask={toggleTask}/> 
+      toggleTask={toggleTask}
+      deleteTask={deleteTask}
+      theme={theme}/> 
   </div>
-    <div className="buttonsContainer">
+    <div className={theme === "dark" ? "buttonsContainer" : "buttonsContainerLight"}>
       <TodoButtons 
       filter={filter}
       setFilter={setFilter}
       clearTasks={clearTasks}
       itemsLeft={itemsLeft}/>
       </div>
-             <div className="mobileButtons">
+             <div className={theme === "dark" ? "mobileButtons" : "mobileButtonsLight"}>
         <MobileButtons 
         setFilter={setFilter}
         filter={filter}/>
