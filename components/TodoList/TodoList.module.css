@@ -1,43 +1,43 @@
 .taskRow {
-    display: flex;
-    align-items: center;
-    padding: 0.1rem;
-    width: 540px;
-    background-color: hsl(235, 24%, 19%);
-    color: hsl(234, 39%, 85%);
-    letter-spacing: 1px;
-    gap:1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1px;
-    position: relative;
-    bottom: 8.5rem;
-    
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+  width: 540px;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+  letter-spacing: 1px;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  position: relative;
+  bottom: 8.5rem;
 }
 
 .taskRowLight {
-     display: flex;
-    align-items: center;
-    padding: 0.1rem;
-    width: 540px;
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(235, 19%, 35%);
-    letter-spacing: 1px;
-    gap:1rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
-    border-radius: 1px;
-    position: relative;
-    bottom: 8.5rem;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+  width: 540px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(235, 19%, 35%);
+  letter-spacing: 1px;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+  border-radius: 1px;
+  position: relative;
+  bottom: 8.5rem;
 }
 
 .completedText {
   text-decoration: line-through;
   color: hsl(235, 14%, 35%);
-
 }
 
 .circle {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   border: 1px solid hsl(235, 19%, 35%);
   cursor: pointer;
@@ -65,50 +65,43 @@
 
 .deleteButton {
   display: none;
-  
 }
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 550px) {
   .taskRow {
- width: 320px;
- bottom: 6rem;
-
-    
-}
+    width: 320px;
+    bottom: 6rem;
+  }
 
   .taskRowLight {
- width: 320px;
- bottom: 6rem;
+    width: 320px;
+    bottom: 6rem;
+  }
 
-    
-}
-
-
-.deleteButton {
-  display: flex;
-  position: absolute;
-  left: 17.5rem;
-  background: none;
-  border: none;
-  
-}
+  .deleteButton {
+    display: flex;
+    position: absolute;
+    left: 17.5rem;
+    background: none;
+    border: none;
+  }
 }
 
 @media screen and (max-height: 990px) {
   .taskRow {
-  bottom: 4.8rem;
-}
+    bottom: 4.8rem;
+  }
 
   .taskRowLight {
-  bottom: 4.8rem;
-}
+    bottom: 4.8rem;
+  }
 }
 
 @media screen and (max-height: 670px) {
   .taskRow {
-  bottom: 3rem;
-}
+    bottom: 3rem;
+  }
 
   .taskRowLight {
-  bottom: 3rem;
-}
+    bottom: 3rem;
+  }
 }
