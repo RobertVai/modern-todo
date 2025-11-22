@@ -12,7 +12,9 @@ const TodoList = ({ filteredTasks, toggleTask,deleteTask, theme}) => {
       <p className={t.completed ? styles.completedText : ""}>
         {t.text}
       </p>
-      <button className={styles.deleteButton} onClick={() => deleteTask(t.id)}>X</button>
+      <button className={styles.deleteButton} onClick={() => deleteTask(t.id)}>
+        <img src="/icons/icon-cross.svg" alt="Cross for deleting task" />
+      </button>
     </li>
   ));
 };

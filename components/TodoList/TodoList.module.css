@@ -6,7 +6,7 @@
     background-color: hsl(235, 24%, 19%);
     color: hsl(234, 39%, 85%);
     letter-spacing: 1px;
-    gap:1.5rem;
+    gap:1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1px;
     position: relative;
@@ -22,7 +22,7 @@
     background-color: hsl(0, 0%, 98%);
     color: hsl(235, 19%, 35%);
     letter-spacing: 1px;
-    gap:1.5rem;
+    gap:1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.219);
     border-radius: 1px;
     position: relative;
@@ -86,7 +86,7 @@
 .deleteButton {
   display: flex;
   position: absolute;
-  left: 18.5rem;
+  left: 17.5rem;
   background: none;
   border: none;
   

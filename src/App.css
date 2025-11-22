@@ -6,7 +6,6 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   height: 100dvh;
-  
 }
 
 .dark {
@@ -17,8 +16,6 @@ body {
 .light {
   height: 100vh;
   background-color: hsl(233, 11%, 84%);
-  
-
 }
 
 .title {
@@ -28,18 +25,13 @@ body {
   padding-bottom: 5rem;
 }
 
-
 .taskWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;              
+  justify-content: center;
+  align-items: center;
   color: hsl(234, 39%, 85%);
-
-  
-          
 }
-
 
 .hero {
   display: flex;
@@ -52,7 +44,6 @@ body {
   width: 100%;
 }
 
-
 .light .hero {
   background-image: url("/images/bg-desktop-light.jpg");
   background-position: center top;
@@ -60,9 +51,7 @@ body {
 
 .dark .hero {
   background-image: url("/images/bg-desktop-dark.jpg");
-  
 }
-
 
 .taskWrapper h1 {
   color: white;
@@ -70,102 +59,97 @@ body {
 }
 
 .buttonsContainer {
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 509px;
-position: relative;
-bottom: 8.5rem;
-background-color: hsl(235, 24%, 19%);
-padding: 1.1rem;
-border: none;
-border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 509px;
+  position: relative;
+  bottom: 8.5rem;
+  background-color: hsl(235, 24%, 19%);
+  padding: 1.1rem;
+  border: none;
+  border-radius: 1px;
 }
 
 .buttonsContainerLight {
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 509px;
-position: relative;
-bottom: 8.5rem;
-background-color: hsl(0, 0%, 98%);
-padding: 1.1rem;
-border: none;
-border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 509px;
+  position: relative;
+  bottom: 8.5rem;
+  background-color: hsl(0, 0%, 98%);
+  padding: 1.1rem;
+  border: none;
+  border-radius: 1px;
 }
 
 .mobileButtons {
   display: none;
 }
 
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 550px) {
   .title {
- width: 332px;
+    width: 332px;
+  }
 
-    
-}
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 288px;
+    height: 18px;
+    margin-top: 2.5rem;
+  }
 
-.buttonsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 288px;
-  height: 18px;
-  margin-top: 2.5rem;
-}
+  .buttonsContainerLight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 288px;
+    height: 18px;
+    margin-top: 2.5rem;
+  }
 
-.buttonsContainerLight {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 288px;
-  height: 18px;
-  margin-top: 2.5rem;
-}
+  .mobileButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    position: relative;
+    bottom: 7.5rem;
+    background-color: hsl(235, 24%, 19%);
+    padding: 1.1rem;
+    border: none;
+    border-radius: 5px;
+  }
 
-.mobileButtons {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 290px;
-position: relative;
-bottom: 7.5rem;
-background-color: hsl(235, 24%, 19%);
-padding: 1.1rem;
-border: none;
-border-radius: 5px;
-}
+  .mobileButtonsLight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    position: relative;
+    bottom: 7.5rem;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1.1rem;
+    border: none;
+    border-radius: 5px;
+  }
 
-.mobileButtonsLight {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 290px;
-position: relative;
-bottom: 7.5rem;
-background-color: hsl(0, 0%, 98%);
-padding: 1.1rem;
-border: none;
-border-radius: 5px;
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 14vh;
-  width: 100%;
-}
-
-
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 14vh;
+    width: 100%;
+  }
 }
 
 @media screen and (max-height: 999px) {
- 
   .title {
     position: relative;
     top: 0.5rem;
@@ -181,16 +165,12 @@ border-radius: 5px;
 }
 
 @media screen and (max-height: 670px) {
-  .taskWrapper h1 {
-    font-size: 18px;
-  }
-
   .title {
     position: relative;
     top: 1rem;
   }
 
-    .buttonsContainer {
+  .buttonsContainer {
     margin-top: 5.5rem;
   }
 
@@ -199,3 +179,8 @@ border-radius: 5px;
   }
 }
 
+@media screen and (max-height: 1000px) {
+  .hero {
+    height: 25vh;
+  }
+}

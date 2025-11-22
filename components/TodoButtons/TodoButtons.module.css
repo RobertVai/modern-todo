@@ -1,32 +1,27 @@
 .taskButton {
-    background: none;
-    border: none;
-    color: hsl(235, 16%, 43%);
-    cursor: pointer;
-    
+  background: none;
+  border: none;
+  color: hsl(235, 16%, 43%);
+  cursor: pointer;
 }
 
 .activeButton {
-    background: none;
-    border: none;
-    color: hsl(220, 98%, 61%);
-    cursor: pointer;
+  background: none;
+  border: none;
+  color: hsl(220, 98%, 61%);
+  cursor: pointer;
 }
 
 .mobileButtons {
-    display: none;
+  display: none;
 }
 
-@media screen and (max-width: 550px)  {
-
-.filterButtons {
+@media screen and (max-width: 550px) {
+  .filterButtons {
     visibility: hidden;
-}
+  }
 
-.taskButton {
+  .taskButton {
     display: flex;
-    
+  }
 }
-
-}
-

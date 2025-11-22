@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../TodoItem/TodoItem.module.css";
 
-const TodoItem = ({ task, setTask, addTask,theme }) => {
+const TodoItem = ({ task, setTask, addTask, theme }) => {
   return (
     <div className={theme === "dark" ? styles.newTask : styles.newTaskLight}>
       <input
